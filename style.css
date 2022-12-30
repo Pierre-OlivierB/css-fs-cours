@@ -1,6 +1,17 @@
 /* body {
     background: red;
 } */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./assets/img/photo-paysage.png) center/cover;
+    /* VH : Viewport Height, taille écran */
+    min-height: 100vh;
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -8,4 +19,40 @@ h1 {
     font-size: 2.5rem;
     text-shadow: -2px 3px 3px #2e71c5b8;
     color: hsl(120, 50%, 50%);
+}
+
+main {
+    background: hsl(180, 100%, 100%, 0.8);
+    min-height: 500px;
+    width: 90%;
+    padding: 20px;
+    /* margin : haut&bas droite&gauche*/
+    margin: 0 auto;
+    border: 2px solid hsl(219, 71%, 37%);
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px 12px hsl(250deg 71% 50%);
+
+}
+
+.flex-box {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.flex-box ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-box li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
