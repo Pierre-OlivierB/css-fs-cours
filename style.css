@@ -35,11 +35,13 @@ main {
 }
 
 .flex-box,
-.grid {
+.grid,
+.absolute {
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 .flex-box ul {
@@ -124,4 +126,29 @@ textarea {
 
 #submit:hover {
     background-color: hsl(219, 64%, 85%);
+}
+
+/*Absolute*/
+.absolute {
+    position: relative;
+}
+
+#circle1 {
+    height: 80px;
+    width: 80px;
+    background: skyblue;
+    position: absolute;
+    border-radius: 150px;
+    top: 0;
+    right: 0;
+}
+
+#circle2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    background-color: teal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
